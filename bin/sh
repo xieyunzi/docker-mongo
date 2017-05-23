@@ -1,3 +1,8 @@
 #!/bin/bash
 
+echo 'Usage:'
+echo '  mongo <ip>/<port>'
+echo '  mongoexport --help'
+echo '  mongoimport --help'
+echo
 docker-compose run --rm -v $PWD/data/backup:/backup -w /backup mongo /bin/bash
