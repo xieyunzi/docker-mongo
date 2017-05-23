@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose run --rm mongo /bin/bash
+docker-compose run --rm -v $PWD/data/backup:/backup -w /backup mongo /bin/bash
